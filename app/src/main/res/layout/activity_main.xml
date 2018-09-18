@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:padding="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/one"
+            android:layout_column="0"
+            android:textSize="24sp"
+            android:text="@string/_1"
+            />
+
+        <Button
+            android:id="@+id/two"
+            android:textSize="24sp"
+            android:text="@string/_2"/>
+        <Button
+            android:id="@+id/three"
+            android:textSize="24sp"
+            android:text="@string/_3"/>
+        <Button
+            android:id="@+id/four"
+            android:textSize="24sp"
+            android:text="@string/_4"/>
+        <Button
+            android:id="@+id/five"
+            android:textSize="24sp"
+            android:text="@string/_5"/>
+        <Button
+            android:id="@+id/six"
+            android:textSize="24sp"
+            android:text="@string/_6"/>
+        <Button
+            android:id="@+id/seven"
+            android:textSize="24sp"
+            android:text="@string/_7"/>
+        <Button
+            android:id="@+id/eight"
+            android:textSize="24sp"
+            android:text="@string/_8"/>
+        <Button
+            android:id="@+id/nine"
+            android:textSize="24sp"
+            android:text="@string/_9"/>
+        <Button
+            android:id="@+id/zero"
+            android:textSize="24sp"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill"
+            android:text="@string/_0"/>
+
+    </GridLayout>
+
+        <TextView
+            android:id="@+id/entered_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="10"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/clear_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:text="@string/clear"/>
+
+        <Button
+            android:id="@+id/convert_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="@string/convert"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/binary_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:gravity="center"
+            android:textSize="24sp"/>
+
+        </LinearLayout>
+
+
+
+
+</layout>
